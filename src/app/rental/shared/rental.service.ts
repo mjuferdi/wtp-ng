@@ -70,7 +70,7 @@ export class RentalService {
     });
   }
 
-  public getRentals(): Observabley<Rental[]> {
+  public getRentals(): Observable<Rental[]> {
     return new Observable<Rental[]>((observer) => {
       setTimeout(() => {
         observer.next(this.rentals);
