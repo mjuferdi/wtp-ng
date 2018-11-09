@@ -6,6 +6,7 @@ const Rental = require('./models/rental')
 
 const rentalRoutes = require('./routes/rentals');
 
+// Connect to database and push dummy data
 mongoose.connect(config.DB_URI).then(() => {
   const fakeDb = new FakeDb();
   fakeDb.seedDb();
@@ -13,6 +14,7 @@ mongoose.connect(config.DB_URI).then(() => {
 
 const app = express();
 
+// Create routing for rentas
 app.use('/api/v1/rentals', rentalRoutes);
 
 const PORT = process.env.PORT || 3001;

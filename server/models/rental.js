@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+// Database schema
 const rentalSchema = new Schema({
   title: {
     type: String,

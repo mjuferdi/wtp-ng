@@ -1,4 +1,6 @@
 const Rental = require('./models/rental');
+
+// Dummy data for database
 class FakeDb {
   constructor() {
     this.rentals = [{
@@ -14,24 +16,24 @@ class FakeDb {
       },
       {
         title: "Modern apartment in center",
-        city: "New York",
-        street: "Time Square",
+        city: "Berlin",
+        street: "Rathenau str",
         category: "apartment",
         image: "https://booksync-jerga-prod.s3.amazonaws.com/uploads/rental/image/5/image.jpeg",
         bedrooms: 1,
         shared: false,
-        description: "Very nice apartment in center of the city.",
+        description: "Good for student.",
         dailyRate: 11
       },
       {
         title: "Old house in nature",
-        city: "Spisska Nova Ves",
-        street: "Banicka 1",
+        city: "Amsterdam",
+        street: "Haarlemmerstraat 64",
         category: "house",
         image: "https://booksync-jerga-prod.s3.amazonaws.com/uploads/rental/image/5/image.jpeg",
-        bedrooms: 5,
+        bedrooms: 3,
         shared: true,
-        description: "Very nice apartment in center of the city.",
+        description: "Chill house in central Amsterdam.",
         dailyRate: 23
       }
     ]
