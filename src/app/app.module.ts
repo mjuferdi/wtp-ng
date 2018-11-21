@@ -8,6 +8,7 @@ import { HeaderComponent } from './common/header/header.component';
 import { RentalComponent } from './rental/rental.component';
 
 import { RentalModule } from './rental/rental.module';
+import { MapComponent } from './common/map/map.component';
 
 // Routing for pages
 const routes: Routes = [
