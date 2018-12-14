@@ -11,7 +11,7 @@ const rentalRoutes = require('./routes/rentals'),
 // Connect to database and push dummy data
 mongoose.connect(config.DB_URI).then(() => {
   const fakeDb = new FakeDb();
-  //fakeDb.seedDb();
+  fakeDb.seedDb();
 });
 
 const app = express();
