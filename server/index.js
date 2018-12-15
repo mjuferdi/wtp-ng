@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 
 // Create routing
 app.use('/api/v1/rentals', rentalRoutes);
-app.use('/api/v1/users', userRoutes);
+//app.use('/api/v1/users', userRoutes);
 
 const PORT = process.env.PORT || 3001;
 
