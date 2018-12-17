@@ -9,13 +9,15 @@ import { RentalComponent } from './rental/rental.component';
 
 import { RentalModule } from './rental/rental.module';
 import { MapComponent } from './common/map/map.component';
-import { LoginComponent } from './common/header/login/login.component';
+import { LoginComponent } from './common/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './common/register/register.component';
 
 // Routing for pages
 const routes: Routes = [
   { path: '', redirectTo: '/rentals', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   //{ path: '**', component: PageNotFoundComponent }
 ]
 
@@ -24,7 +26,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
