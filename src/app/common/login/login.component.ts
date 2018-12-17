@@ -33,8 +33,6 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    //print("Submitting:");
-    //print(this.loginForm.value);
     //this.authenticationService.login(this.model.username, this.model.password)
     //  .subscribe(
     //    data => {
