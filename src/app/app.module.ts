@@ -9,22 +9,28 @@ import { RentalComponent } from './rental/rental.component';
 
 import { RentalModule } from './rental/rental.module';
 import { MapComponent } from './common/map/map.component';
+import { LoginComponent } from './common/header/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // Routing for pages
 const routes: Routes = [
-    {path: '', redirectTo: '/rentals', pathMatch: 'full'}
+  { path: '', redirectTo: '/rentals', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  //{ path: '**', component: PageNotFoundComponent }
 ]
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoginComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule,
-    RentalModule
+    RentalModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

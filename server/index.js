@@ -6,7 +6,7 @@ const FakeDb = require('./fake-db');
 const Rental = require('./models/rental')
 
 const rentalRoutes = require('./routes/rentals'),
-      userRoutes = require('./routes/users');
+  userRoutes = require('./routes/users');
 
 // Connect to database and push dummy data
 mongoose.connect(config.DB_URI).then(() => {
