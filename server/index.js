@@ -6,7 +6,7 @@ const FakeDb = require('./fake-db');
 const Rental = require('./models/rental')
 
 const rentalRoutes = require('./routes/rentals'),
-      userRoutes = require('./routes/users');
+  userRoutes = require('./routes/users');
 
 // Connect to database and push dummy data
 mongoose.connect(config.DB_URI).then(() => {
@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 
 // Create routing
 app.use('/api/v1/rentals', rentalRoutes);
-app.use('/api/v1/users', userRoutes);
+//app.use('/api/v1/users', userRoutes);
 
 const PORT = process.env.PORT || 3001;
 
