@@ -4,9 +4,9 @@ const Rental = require('../models/rental');
 
 const UserCtrl = require('../controllers/user');
 
-//router.get('/secret', UserCtrl.authMiddleware, function(req, res) {
-//    res.json({"secret": true});
-//})
+router.get('/secret', UserCtrl.authMiddleware, function(req, res) {
+    res.json({"secret": true});
+})
 
 // Routing rentals without id as parameter
 router.get('', function(req, res) {
