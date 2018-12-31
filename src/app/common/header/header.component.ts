@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../../auth/shared/auth.service';
+import { Router } from '@angular/router';
+
+
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
@@ -8,7 +12,13 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 
 export class HeaderComponent {
-  searchForm = new FormGroup({
-    search: new FormControl('')
-  });
+    constructor(public auth: AuthService, public router: Router) {}
+
+    logout() {
+        this.auth.logout();
+        this.router.navigate(['/login']);
+    }
+    searchForm = new FormGroup({
+        search: new FormControl('')
+    });
 }
