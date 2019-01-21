@@ -36,7 +36,7 @@
   </div>
   <div class="modal-body">
     <em>{{newBooking.days}}</em> nights /
-    <em>{{rental.dailyRate}}</em> per Night
+    <em>{{rental.dailyRate}}</em>$ per Night
     <p>Guests: <em>{{newBooking.guests}}</em></p>
     <p>Price: <em>{{newBooking.totalPrice}}$</em></p>
 
@@ -48,7 +48,7 @@
     </p>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-wtp" (click)="createBooking()">Confirm</button>
-    <button type="button" class="btn btn-wtp" (click)="c('Close click')">Close</button>
+    <button type="button" class="btn btn-wtp btn-conf" (click)="createBooking()">Confirm</button>
+    <button type="button" class="btn btn-wtp btn-cls" (click)="c('Close click')">Close</button>
   </div>
 </ng-template>
