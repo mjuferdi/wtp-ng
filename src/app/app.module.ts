@@ -11,6 +11,7 @@ import { RentalComponent } from './rental/rental.component';
 
 import { RentalModule } from './rental/rental.module';
 import { AuthModule } from './auth/auth.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Routing for pages
 const routes: Routes = [
@@ -27,6 +28,8 @@ const routes: Routes = [
     BrowserModule,
     RentalModule,
     AuthModule,
+    FormsModule,
+    ReactiveFormsModule,
     NgbModule.forRoot(),
     ToastModule.forRoot(),
     BrowserAnimationsModule

@@ -19,6 +19,7 @@ import { HelperService } from '../common/service/helper.service';
 import { UppercasePipe } from '../common/pipes/uppercase.pipe';
 
 import { AuthGuard } from '../auth/shared/auth.guard';
+import { SearchRentalPipe } from '../common/pipes/search.pipe';
 
 // Routing for pages
 const routes: Routes = [
@@ -38,6 +39,7 @@ const routes: Routes = [
     RentalComponent,
     RentalDetailComponent,
     UppercasePipe,
+    SearchRentalPipe,
     RentalDetailBookingComponent
   ],
   imports: [

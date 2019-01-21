@@ -15,7 +15,11 @@ export class LoginComponent implements OnInit {
   errors: any[] = [];
   notifMessage: string = "";
 
-  constructor(private fb: FormBuilder, private auth: AuthService, private router: Router, private route: ActivatedRoute) { }
+  constructor(
+    private fb: FormBuilder,
+    private auth: AuthService,
+    private router: Router,
+    private route: ActivatedRoute) { }
 
   ngOnInit() {
       this.initForm();
