@@ -4,7 +4,7 @@
 
   td {
     &.in-range {
-      background-color: #ffa9a9 !important;
+      background-color: #b1e377 !important;
     }
 
     &.active {
@@ -22,7 +22,7 @@
   border: 1px solid $light-gray-color;
 
   .btn-confirm {
-    background-color: #FF5A5F;
+    background-color: #dc3545;
     font-size: 17px;
     font-weight: 700;
     padding: 13px;
@@ -56,6 +56,16 @@
 }
 
 // MODAL
+
+.btn-conf {
+    background-color: #74ba24 !important;
+    color: #ffffff !important;
+}
+
+.btn-cls {
+    background-color: #ffa9a9 !important;
+    color: #ffffff !important;
+}
 
 .title {
   font-weight: 700;
