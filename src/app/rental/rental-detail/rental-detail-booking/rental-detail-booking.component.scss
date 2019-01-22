@@ -21,6 +21,24 @@
   padding: 20px;
   border: 1px solid $light-gray-color;
 
+  .should-login {
+      text-align: center;
+      margin-bottom: 10px;
+      padding: 20px 0;
+      background-color: #dc3545;
+      .btn-wtp {
+          padding: 10px;
+
+          &:focus, &:hover {
+              color: white;
+          }
+      }
+  }
+
+  .should-login-btn {
+      color: white;
+  }
+
   .btn-confirm {
     background-color: #dc3545;
     font-size: 17px;
