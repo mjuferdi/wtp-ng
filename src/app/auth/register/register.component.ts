@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../shared/auth.service';
 import { Router } from '@angular/router';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'wtp-register',
@@ -31,7 +31,15 @@ export class RegisterComponent implements OnInit {
       lastname: ['', Validators.required],
       password: ['', Validators.required],
       passwordConfirmation: ['', Validators.required]
-    })
+    }, { validator: this.matchingPasswords('password', 'passwordConfirmation') })
+  }
+
+  private matchingPasswords(passKey: string, passConfirmKey: string) {
+    return (group: FormGroup) => {
+      const pass = group.controls[passKey];
+      const passConfirm = group.controls[passConfirmKey];
+      return pass.value !== passConfirm.value ? passConfirm.setErrors({ isSame: true }) : passConfirm.setErrors(null);
+    };
   }
 
   isInvalidForm(fieldName): boolean {
@@ -52,5 +60,4 @@ export class RegisterComponent implements OnInit {
           this.errors = errorResponse.error.errors;
       })
   }
-
 }
