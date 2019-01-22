@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../shared/auth.service';
 import { Router } from '@angular/router';
-import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { User } from '../shared/user.model';
 
 @Component({
   selector: 'wtp-register',
@@ -10,9 +11,9 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
 })
 export class RegisterComponent implements OnInit {
 
-  formData: any = {};
   errors: any[] = [];
   registerForm: FormGroup;
+  user: User;
 
   constructor(
     private auth: AuthService,
@@ -52,7 +53,15 @@ export class RegisterComponent implements OnInit {
   }
 
   register() {
-    this.auth.register(this.formData).subscribe(
+    this.user = new User();
+    this.user.username = this.registerForm.value.username;
+    this.user.email = this.registerForm.value.email;
+    this.user.firstname = this.registerForm.value.firstname;
+    this.user.lastname = this.registerForm.value.lastname;
+    this.user.password = this.registerForm.value.password;
+    this.user.passwordConfirmation = this.registerForm.value.passwordConfirmation;
+
+    this.auth.register(this.user).subscribe(
       () => {
           this.router.navigate(['/login', {registered: 'success'}]);
       },
