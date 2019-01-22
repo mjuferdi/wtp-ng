@@ -68,6 +68,7 @@ describe('Register form should', () => {
       expect(user.email).toBe("tester@web.de");
       expect(user.password).toBe("a123");
     })
+
   });
 
   describe('have an INVALID field', () => {
