@@ -3,7 +3,7 @@ import { LoginComponent } from './login.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AuthModule } from '../auth.module';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, Router } from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
 import { User } from '../shared/user.model';
 import { AuthService } from '../shared/auth.service';
