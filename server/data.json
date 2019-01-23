@@ -4,87 +4,119 @@
       "city": "San Francisco",
       "street": "Main street",
       "category": "condo",
-      "image": "https://booksync-jerga-prod.s3.amazonaws.com/uploads/rental/image/5/image.jpeg",
+      "image": "https://images.pexels.com/photos/260553/pexels-photo-260553.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
       "bedrooms": 4,
       "shared": false,
-      "description": "Very nice apartment in center of the city.",
+      "description": "Very nice condo in center of the city.",
       "dailyRate": 43
-      },
-      {
+    },
+    {
       "title": "Modern apartment in center",
       "city": "New York",
       "street": "Time Square",
       "category": "apartment",
-      "image": "https://booksync-jerga-prod.s3.amazonaws.com/uploads/rental/image/5/image.jpeg",
+      "image": "https://images.pexels.com/photos/77931/pexels-photo-77931.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "bedrooms": 1,
       "shared": true,
       "description": "Very nice apartment in center of the city.",
       "dailyRate": 11
-      },
-      {
-      "title": "Old house in nature",
-      "city": "Spisska Nova Ves",
-      "street": "Banicka 1",
-      "category": "house",
-      "image": "https://booksync-jerga-prod.s3.amazonaws.com/uploads/rental/image/5/image.jpeg",
-      "bedrooms": 5,
-      "shared": false,
-      "description": "Very nice apartment in center of the city.",
-      "dailyRate": 23
+    },
+    {
+      "title": "Old house like new",
+      "city": "Amsterdam",
+      "street": "Dijkstraat",
+      "category": "apartment",
+      "image": "https://images.pexels.com/photos/584399/living-room-couch-interior-room-584399.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      "bedrooms": 2,
+      "shared": true,
+      "description": "Very nice apartment for student.",
+      "dailyRate": 20
+    },
+    {
+      "title": "Cozy modern Condo",
+      "city": "Berlin",
+      "street": "Rathenaustr",
+      "category": "condo",
+      "image": "https://images.pexels.com/photos/275484/pexels-photo-275484.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      "bedrooms": 3,
+      "shared": true,
+      "description": "Building close to Penn Station",
+      "dailyRate": 40
     },
     {
       "title": "Amazing modern place",
       "city": "San Francisco",
       "street": "Green street",
       "category": "house",
-      "image": "https://booksync-jerga-prod.s3.amazonaws.com/uploads/rental/image/5/image.jpeg",
+      "image": "https://images.pexels.com/photos/349749/kitchen-stove-sink-kitchen-counter-349749.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
       "bedrooms": 2,
       "shared": false,
       "description": "Hiking routes 10 min walking away",
       "dailyRate": 140
-      },
-      {
-      "title": "Apartment In China Town",
+    },
+    {
+      "title": "Comfort zone",
+      "city": "Amsterdam",
+      "street": "Fagelstraat",
+      "category": "house",
+      "image": "https://images.pexels.com/photos/584399/living-room-couch-interior-room-584399.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      "bedrooms": 3,
+      "shared": true,
+      "description": "Very comfort paradise house.",
+      "dailyRate": 38
+    },
+    {
+      "title": "Apartment In Town",
       "city": "San Francisco",
       "street": "Union Street",
       "category": "apartment",
-      "image": "https://booksync-jerga-prod.s3.amazonaws.com/uploads/rental/image/5/image.jpeg",
+      "image": "https://images.pexels.com/photos/275484/pexels-photo-275484.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
       "bedrooms": 3,
       "shared": false,
-      "description": "Very nice apartment in China Town",
+      "description": "Very nice apartment in Town",
       "dailyRate": 89
-      },
-      {
-      "title": "House with Garden",
-      "city": "New York",
-      "street": "Long Island, Queens",
-      "category": "house",
-      "image": "https://booksync-jerga-prod.s3.amazonaws.com/uploads/rental/image/5/image.jpeg",
-      "bedrooms": 6,
-      "shared": false,
-      "description": "Very nice house in Long Island with garden",
-      "dailyRate": 189
     },
     {
-      "title": "Cozy modern Condo",
-      "city": "New York",
-      "street": "Penn Station",
-      "category": "condo",
-      "image": "https://booksync-jerga-prod.s3.amazonaws.com/uploads/rental/image/5/image.jpeg",
+      "title": "House with Garden",
+      "city": "Bali",
+      "street": "Cangu street",
+      "category": "house",
+      "image": "https://images.pexels.com/photos/260553/pexels-photo-260553.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
       "bedrooms": 3,
       "shared": true,
-      "description": "Building close to Penn Station",
-      "dailyRate": 68
+      "description": "Very nice house in Bali Island with garden",
+      "dailyRate": 60
+    },
+    {
+      "title": "Amazing modern place",
+      "city": "Berlin",
+      "street": "Potsdammer Platz",
+      "category": "apartment",
+      "image": "https://images.pexels.com/photos/77931/pexels-photo-77931.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "bedrooms": 4,
+      "shared": true,
+      "description": "Very nice apartment in center of the city Berlin.",
+      "dailyRate": 80
+    },
+    {
+      "title": "Apartment for Student",
+      "city": "Dublin",
+      "street": "Westland Row",
+      "category": "condo",
+      "image": "https://images.pexels.com/photos/260553/pexels-photo-260553.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      "bedrooms": 1,
+      "shared": false,
+      "description": "Very nice apartment in center of the city, good for student.",
+      "dailyRate": 18
     }
   ],
   "users": [{
     "username": "Test User",
     "email": "test@gmail.com",
     "password": "testtest"
-    },{
+  }, {
     "username": "Test User1",
     "email": "test1@gmail.com",
     "password": "testtest1"
-    }
-  ]
+  }]
 }

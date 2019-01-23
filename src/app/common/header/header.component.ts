@@ -17,11 +17,16 @@ export class HeaderComponent {
 
   constructor(public auth: AuthService, public router: Router) {}
 
-  logout() {
-      this.auth.logout();
-      this.router.navigate(['/login']);
-  }
-  searchForm = new FormGroup({
-      search: new FormControl('')
-  });
+    logout() {
+        this.auth.logout();
+        this.router.navigate(['/login']);
+    }
+
+    search(city: string) {
+        city ? this.router.navigate([`/rentals/${city}/homes`]) : this.router.navigate(['/rentals']);
+    }
+
+    searchForm = new FormGroup({
+        search: new FormControl('')
+    });
 }
