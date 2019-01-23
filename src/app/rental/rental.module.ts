@@ -7,8 +7,7 @@ import { MapModule } from '../common/map/map.module';
 import { Daterangepicker } from 'ng2-daterangepicker';
 import { FormsModule } from '@angular/forms';
 
-import { RentalComponent, RentalListItemComponent, RentalListComponent, RentalDetailComponent, RentalDetailBookingComponent } from './';
-import { RentalSearchComponent } from './rental-search/rental-search.component';
+import { RentalSearchComponent, RentalComponent, RentalListItemComponent, RentalListComponent, RentalDetailComponent, RentalDetailBookingComponent } from './';
 
 import { RentalService } from './shared/rental.service';
 import { BookingService } from '../booking/shared/booking.service';
@@ -25,9 +24,9 @@ const routes: Routes = [
     component: RentalComponent,
     children: [
     	{ path: '', component: RentalListComponent },
-        { path: 'new', component: RentalCreateComponent, canActivate: [AuthGuard] },
+      { path: 'new', component: RentalCreateComponent, canActivate: [AuthGuard] },
     	{ path: ':rentalId', component: RentalDetailComponent},
-        { path: ':city/homes', component: RentalSearchComponent},
+      { path: ':city/homes', component: RentalSearchComponent}
     ]
   }
 ]
@@ -41,7 +40,7 @@ const routes: Routes = [
     UppercasePipe,
     RentalDetailBookingComponent,
     RentalSearchComponent,
-    RentalCreateComponent
+    RentalCreateComponent,
     SearchRentalPipe
   ],
   imports: [
